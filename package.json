@@ -1,0 +1,13 @@
+{
+  "name": "pimd-design",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prismjs": "^1.15.0"
+  }
+}
