@@ -1,10 +1,10 @@
 const fs = require('fs')
-const Config = require('../pimd/lib/config')
-const Document = require('../pimd/lib/document')
+const Config = require('pimd/lib/config')
+const Document = require('pimd/lib/document')
 const Prism = require('prismjs')
 
 // Official plugin:
-const previewPlugin = require('../pimd/plugins/preview')
+const previewPlugin = require('@pimd/preview-plugin')
 
 // Experimental local plugins:
 const showmorePlugin = require('./plugins/showmore')

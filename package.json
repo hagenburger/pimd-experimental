@@ -8,6 +8,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@pimd/preview-plugin": "^0.1.0",
+    "pimd": "^0.1.0",
     "prismjs": "^1.15.0"
   }
 }
