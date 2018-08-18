@@ -175,7 +175,7 @@ pre[class*="language-"] {
     background: white;
     padding: 10px;
   }
-</style></head><body><h1>Test suite for new features</h1><h2>Highlight</h2><p>This example highlights the important part to help understanding the code example:</p><div class="pimd-example"><div class="pimd-preview"><ul>
+</style></head><body><h1>Test suite for new features</h1><p>This is a playground for experimental/upcoming features for <a href="">PIMD – a Markdown renderer with focus on extendibility</a> which was born out of the <a href="https://github.com/livingstyleguide/livingstyleguide">LivingStyleGuide project</a>.</p><p>The Markdown source code of the file you are looking at <a href="https://raw.githubusercontent.com/hagenburger/pimd-experimental/master/test.md">can be found on GitHub</a>.</p><h2>Highlight</h2><p>This example highlights the important part to help understanding the code example:</p><div class="pimd-example"><div class="pimd-preview"><ul>
   <li class="my-list-item">
     Item 1
   </li>
@@ -203,7 +203,8 @@ pre[class*="language-"] {
     Item 4
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
-</code></pre></div></div><h2>Highlight all</h2><p>When using regular expressions with the <code>g</code> modifier, multiple highlights can be generated:</p><div class="pimd-example"><div class="pimd-preview"><ul>
+</code></pre></div></div><p>To highlight parts of the source add to the code block:</p><div class="pimd-example"><div class="pimd-code"><pre><code class="lang-markdown">``` html highlight=/class="my-list-item"/
+</code></pre></div></div><p>Open the <a href="https://github.com/hagenburger/pimd/issues/19">specification for this feature</a> on GitHub. <strong>Comments? Questions? Feedback?</strong> Feel free to discuss on the ticket!</p><h2>Highlight all</h2><p>When using regular expressions with the <code>g</code> modifier, multiple highlights can be generated:</p><div class="pimd-example"><div class="pimd-preview"><ul>
   <li class="my-list-item">
     Item 1
   </li>
@@ -231,7 +232,7 @@ pre[class*="language-"] {
     Item 4
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
-</code></pre></div></div><h2>Highlight all</h2><p>Of course, a regular expression can be written more useful:</p><div class="pimd-example"><div class="pimd-preview"><ul>
+</code></pre></div></div><p>Open the <a href="https://github.com/hagenburger/pimd/issues/19">specification for this feature</a> on GitHub. <strong>Comments? Questions? Feedback?</strong> Feel free to discuss on the ticket!</p><h2>Highlight all</h2><p>Of course, a regular expression can be written more useful:</p><div class="pimd-example"><div class="pimd-preview"><ul>
   <li class="my-list-item">
     Item 1
   </li>
@@ -259,7 +260,7 @@ pre[class*="language-"] {
     Item 4
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
-</code></pre></div></div><h2>Highlight multiple rules</h2><p>Multiple rules can either be done by using the or (<code>|</code>) in the regular expression or by providing
+</code></pre></div></div><p>Open the <a href="https://github.com/hagenburger/pimd/issues/19">specification for this feature</a> on GitHub. <strong>Comments? Questions? Feedback?</strong> Feel free to discuss on the ticket!</p><h2>Highlight multiple rules</h2><p>Multiple rules can either be done by using the or (<code>|</code>) in the regular expression or by providing
 multiple regular expressions separated by <code>;</code>:</p><p style="color: red">
   This does not work yet!
 </p>
@@ -291,7 +292,7 @@ multiple regular expressions separated by <code>;</code>:</p><p style="color: re
     Item 4
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
-</i></code></pre></div></div><h2>Showmore</h2><p>All 4 list items in the example above might be needed for the preview but pollute the code block.
+</i></code></pre></div></div><p>Open the <a href="https://github.com/hagenburger/pimd/issues/19">specification for this feature</a> on GitHub. <strong>Comments? Questions? Feedback?</strong> Feel free to discuss on the ticket!</p><h2>Showmore</h2><p>All 4 list items in the example above might be needed for the preview but pollute the code block.
 Hiding list item 2 upto 4 makes the example looks much more simple. If needed, the code can be
 expanded:</p><div class="pimd-example"><div class="pimd-preview"><ul>
   <li class="my-list-item">
@@ -321,7 +322,7 @@ expanded:</p><div class="pimd-example"><div class="pimd-preview"><ul>
     Item 4
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
 </div><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
-</code></pre></div></div><h2>Links</h2><p>If there is a definition for something, it can be linked:</p><div class="pimd-example"><div class="pimd-preview"><ul>
+</code></pre></div></div><p>Open the <a href="https://github.com/hagenburger/pimd/issues/19">specification for this feature</a> on GitHub. <strong>Comments? Questions? Feedback?</strong> Feel free to discuss on the ticket!</p><h2>Links</h2><p>If there is a definition for something, it can be linked:</p><div class="pimd-example"><div class="pimd-preview"><ul>
   <li class="my-list-item">
     Item 1
   </li>
@@ -349,9 +350,4 @@ expanded:</p><div class="pimd-example"><div class="pimd-preview"><ul>
     Item 4
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
-</code></pre></div></div><p>Nulla aliqua anim cupidatat nostrud dolore sint. Laborum nostrud nulla do labore mollit dolor amet
-incididunt irure amet. Adipisicing mollit consequat nisi sint commodo officia fugiat commodo
-cupidatat. Aliquip enim velit in magna consequat anim do amet exercitation est consectetur. Est ea
-amet anim velit labore occaecat est exercitation Lorem. Laboris deserunt ea culpa dolore aliquip
-proident culpa duis irure eiusmod esse quis irure nostrud. Sunt excepteur veniam adipisicing ea eu
-esse nisi qui cillum pariatur nisi.</p></body></html>
+</code></pre></div></div><p>Open the <a href="https://github.com/hagenburger/pimd/issues/19">specification for this feature</a> on GitHub. <strong>Comments? Questions? Feedback?</strong> Feel free to discuss on the ticket!</p><p>Created by Nico Hagenburger. Released under MIT licence (see <a href="https://github.com/hagenburger/pimd-experimental">repository</a>).</p><p><strong>Feedback</strong> is very welcome. Do you like those features? Do you have an opinion about the naming/the syntax? Ping me <a href="https://twitter.com/hagenburger">on Twitter</a> or open an issue</p></body></html>

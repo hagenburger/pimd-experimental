@@ -1,5 +1,10 @@
 # Test suite for new features
 
+This is a playground for experimental/upcoming features for [PIMD – a Markdown renderer with focus on extendibility]() which was born out of the [LivingStyleGuide project](https://github.com/livingstyleguide/livingstyleguide).
+
+The Markdown source code of the file you are looking at [can be found on GitHub](https://raw.githubusercontent.com/hagenburger/pimd-experimental/master/test.md).
+
+
 ## Highlight
 
 This example highlights the important part to help understanding the code example:
@@ -20,6 +25,14 @@ This example highlights the important part to help understanding the code exampl
   </li>
 </ul>
 ```
+
+To highlight parts of the source add to the code block:
+
+```` markdown
+``` html highlight=/class="my-list-item"/
+````
+
+Open the [specification for this feature](https://github.com/hagenburger/pimd/issues/19) on GitHub. **Comments? Questions? Feedback?** Feel free to discuss on the ticket!
 
 
 ## Highlight all
@@ -43,6 +56,8 @@ When using regular expressions with the `g` modifier, multiple highlights can be
 </ul>
 ```
 
+Open the [specification for this feature](https://github.com/hagenburger/pimd/issues/19) on GitHub. **Comments? Questions? Feedback?** Feel free to discuss on the ticket!
+
 
 ## Highlight all
 
@@ -64,6 +79,8 @@ Of course, a regular expression can be written more useful:
   </li>
 </ul>
 ```
+
+Open the [specification for this feature](https://github.com/hagenburger/pimd/issues/19) on GitHub. **Comments? Questions? Feedback?** Feel free to discuss on the ticket!
 
 
 ## Highlight multiple rules
@@ -92,6 +109,8 @@ multiple regular expressions separated by `;`:
 </ul>
 ```
 
+Open the [specification for this feature](https://github.com/hagenburger/pimd/issues/19) on GitHub. **Comments? Questions? Feedback?** Feel free to discuss on the ticket!
+
 
 ## Showmore
 
@@ -116,6 +135,8 @@ expanded:
 </ul>
 ```
 
+Open the [specification for this feature](https://github.com/hagenburger/pimd/issues/19) on GitHub. **Comments? Questions? Feedback?** Feel free to discuss on the ticket!
+
 
 ## Links
 
@@ -138,9 +159,10 @@ If there is a definition for something, it can be linked:
 </ul>
 ```
 
-Nulla aliqua anim cupidatat nostrud dolore sint. Laborum nostrud nulla do labore mollit dolor amet
-incididunt irure amet. Adipisicing mollit consequat nisi sint commodo officia fugiat commodo
-cupidatat. Aliquip enim velit in magna consequat anim do amet exercitation est consectetur. Est ea
-amet anim velit labore occaecat est exercitation Lorem. Laboris deserunt ea culpa dolore aliquip
-proident culpa duis irure eiusmod esse quis irure nostrud. Sunt excepteur veniam adipisicing ea eu
-esse nisi qui cillum pariatur nisi.
+Open the [specification for this feature](https://github.com/hagenburger/pimd/issues/19) on GitHub. **Comments? Questions? Feedback?** Feel free to discuss on the ticket!
+
+---
+
+Created by Nico Hagenburger. Released under MIT licence (see [repository](https://github.com/hagenburger/pimd-experimental)).
+
+**Feedback** is very welcome. Do you like those features? Do you have an opinion about the naming/the syntax? Ping me [on Twitter](https://twitter.com/hagenburger) or open an issue
