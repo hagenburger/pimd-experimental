@@ -4,7 +4,7 @@
 
 This example highlights the important part to help understanding the code example:
 
-~~~ test-2.html +syntax +preview highlight=/class="my-list-item"/
+``` test-2.html +syntax +preview highlight=/class="my-list-item"/
 <ul>
   <li class="my-list-item">
     Item 1
@@ -19,14 +19,14 @@ This example highlights the important part to help understanding the code exampl
     Item 4
   </li>
 </ul>
-~~~
+```
 
 
 ## Highlight all
 
 When using regular expressions with the `g` modifier, multiple highlights can be generated:
 
-~~~ test-2.html +syntax +preview highlight=/class="my-list-item"/g
+``` test-2.html +syntax +preview highlight=/class="my-list-item"/g
 <ul>
   <li class="my-list-item">
     Item 1
@@ -41,14 +41,14 @@ When using regular expressions with the `g` modifier, multiple highlights can be
     Item 4
   </li>
 </ul>
-~~~
+```
 
 
 ## Highlight all
 
 Of course, a regular expression can be written more useful:
 
-~~~ test-2.html +syntax +preview highlight=/class=".*?"/g
+``` test-2.html +syntax +preview highlight=/class=".*?"/g
 <ul>
   <li class="my-list-item">
     Item 1
@@ -63,7 +63,7 @@ Of course, a regular expression can be written more useful:
     Item 4
   </li>
 </ul>
-~~~
+```
 
 
 ## Highlight multiple rules
@@ -75,7 +75,7 @@ multiple regular expressions separated by `;`:
   This does not work yet!
 </p>
 
-~~~ test-2.html +syntax +preview highlight=/my-list-item|my-special-list-item/g;/<li/
+``` test-2.html +syntax +preview highlight=/my-list-item|my-special-list-item/g;/<li/
 <ul>
   <li class="my-list-item">
     Item 1
@@ -90,7 +90,7 @@ multiple regular expressions separated by `;`:
     Item 4
   </li>
 </ul>
-~~~
+```
 
 
 ## Showmore
@@ -99,7 +99,7 @@ All 4 list items in the example above might be needed for the preview but pollut
 Hiding list item 2 upto 4 makes the example looks much more simple. If needed, the code can be
 expanded:
 
-~~~ test-2.html +syntax +preview highlight=/class="my-list-item"/ showmore=5-13
+``` test-2.html +syntax +preview highlight=/class="my-list-item"/ showmore=5-13
 <ul>
   <li class="my-list-item">
     Item 1
@@ -114,14 +114,14 @@ expanded:
     Item 4
   </li>
 </ul>
-~~~
+```
 
 
 ## Links
 
 If there is a definition for something, it can be linked:
 
-~~~ test-2.html +syntax +preview link=/class/g=https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class;/my-special-list-item/g=#my-special-list-item
+``` test-2.html +syntax +preview link=/class/g=https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class;/my-special-list-item/g=#my-special-list-item
 <ul>
   <li class="my-list-item">
     Item 1
@@ -136,7 +136,7 @@ If there is a definition for something, it can be linked:
     Item 4
   </li>
 </ul>
-~~~
+```
 
 Nulla aliqua anim cupidatat nostrud dolore sint. Laborum nostrud nulla do labore mollit dolor amet
 incididunt irure amet. Adipisicing mollit consequat nisi sint commodo officia fugiat commodo
