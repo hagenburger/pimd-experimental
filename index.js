@@ -34,20 +34,27 @@ doc.contents.add('css', prismTheme)
 // Some additional styling:
 doc.contents.add('css', `
   html {
-    background: #f9f9f9;
+    background: #fefefe;
   }
   body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     margin: auto;
+    max-width: 668px;
     padding: 50px;
-    max-width: 800px;
   }
   code {
-    background: #eee;
+    background: #f6f8fa;
+  }
+  pre {
+    margin: 0;
+  }
+  h2 {
+    margin-top: 2em;
   }
   .pimd-example {
-    background: #eee;
-    padding: 10px;
+    background: #f6f8fa;
     border-radius: 3px;
+    padding: 10px;
   }
   .pimd-preview {
     background: white;
