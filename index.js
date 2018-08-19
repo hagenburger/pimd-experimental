@@ -2,6 +2,7 @@ const fs = require('fs')
 const Config = require('pimd/lib/config')
 const Document = require('pimd/lib/document')
 const Prism = require('prismjs')
+const loadLanguages = require('prismjs/components/')
 
 // Official plugin:
 const previewPlugin = require('@pimd/preview-plugin')
@@ -14,6 +15,7 @@ const syntaxPlugin = require('./plugins/syntax')
 
 const config = new Config()
 
+loadLanguages(['markdown'])
 config.highlight = function(code, lang) {
   return Prism.highlight(code, Prism.languages[lang])
 }
