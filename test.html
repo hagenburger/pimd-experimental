@@ -203,7 +203,22 @@ pre[class*="language-"] {
     Item 4
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
-</code></pre></div></div><p>To highlight parts of the source add to the code block:</p><div class="pimd-example"><div class="pimd-code"><pre><code class="lang-markdown">``` html highlight=/class="my-list-item"/
+</code></pre></div></div><p>To highlight parts of the source add to the code block:</p><div class="pimd-example"><div class="pimd-code"><pre><code class="lang-markdown">``` html <i style="font-style: inherit; background: yellow">highlight=/class="my-list-item"/</i>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+<div>  <button onclick="this.parentNode.nextSibling.style.display = 'block'; this.parentNode.style.display = 'none'">···</button></div><div style="display: none">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>my-list-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token code keyword">    Item 1</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>my-list-item my-special-list-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token code keyword">    Item 2</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>my-list-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token code keyword">    Item 3</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>my-list-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token code keyword">    Item 4</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+</div><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+```
 </code></pre></div></div><p>Open the <a href="https://github.com/hagenburger/pimd/issues/19">specification for this feature</a> on GitHub. <strong>Comments? Questions? Feedback?</strong> Feel free to discuss on the ticket!</p><h2>Highlight all</h2><p>When using regular expressions with the <code>g</code> modifier, multiple highlights can be generated:</p><div class="pimd-example"><div class="pimd-preview"><ul>
   <li class="my-list-item">
     Item 1
@@ -232,6 +247,22 @@ pre[class*="language-"] {
     Item 4
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div><p>To highlight parts of the source add to the code block:</p><div class="pimd-example"><div class="pimd-code"><pre><code class="lang-markdown">``` html <i style="font-style: inherit; background: yellow">highlight=/class="my-list-item"/g</i>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+<div>  <button onclick="this.parentNode.nextSibling.style.display = 'block'; this.parentNode.style.display = 'none'">···</button></div><div style="display: none">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>my-list-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token code keyword">    Item 1</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>my-list-item my-special-list-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token code keyword">    Item 2</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>my-list-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token code keyword">    Item 3</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>my-list-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token code keyword">    Item 4</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+</div><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+```
 </code></pre></div></div><p>Open the <a href="https://github.com/hagenburger/pimd/issues/19">specification for this feature</a> on GitHub. <strong>Comments? Questions? Feedback?</strong> Feel free to discuss on the ticket!</p><h2>Highlight all</h2><p>Of course, a regular expression can be written more useful:</p><div class="pimd-example"><div class="pimd-preview"><ul>
   <li class="my-list-item">
     Item 1
@@ -260,6 +291,22 @@ pre[class*="language-"] {
     Item 4
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div><p>To highlight parts of the source add to the code block:</p><div class="pimd-example"><div class="pimd-code"><pre><code class="lang-markdown">``` html <i style="font-style: inherit; background: yellow">highlight=/class=".*?"/g</i>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+<div>  <button onclick="this.parentNode.nextSibling.style.display = 'block'; this.parentNode.style.display = 'none'">···</button></div><div style="display: none">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>my-list-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token code keyword">    Item 1</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>my-list-item my-special-list-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token code keyword">    Item 2</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>my-list-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token code keyword">    Item 3</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>my-list-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token code keyword">    Item 4</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+</div><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+```
 </code></pre></div></div><p>Open the <a href="https://github.com/hagenburger/pimd/issues/19">specification for this feature</a> on GitHub. <strong>Comments? Questions? Feedback?</strong> Feel free to discuss on the ticket!</p><h2>Highlight multiple rules</h2><p>Multiple rules can either be done by using the or (<code>|</code>) in the regular expression or by providing
 multiple regular expressions separated by <code>;</code>:</p><p style="color: red">
   This does not work yet!
@@ -292,7 +339,23 @@ multiple regular expressions separated by <code>;</code>:</p><p style="color: re
     Item 4
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
-</i></code></pre></div></div><p>Open the <a href="https://github.com/hagenburger/pimd/issues/19">specification for this feature</a> on GitHub. <strong>Comments? Questions? Feedback?</strong> Feel free to discuss on the ticket!</p><h2>Showmore</h2><p>All 4 list items in the example above might be needed for the preview but pollute the code block.
+</i></code></pre></div></div><p>To highlight parts of the source add to the code block:</p><div class="pimd-example"><div class="pimd-code"><pre><code class="lang-markdown">``` html <i style="font-style: inherit; background: yellow">highlight=/my-list-item|my-special-list-item/g;/&lt;li/</i>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+<div>  <button onclick="this.parentNode.nextSibling.style.display = 'block'; this.parentNode.style.display = 'none'">···</button></div><div style="display: none">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>my-list-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token code keyword">    Item 1</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>my-list-item my-special-list-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token code keyword">    Item 2</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>my-list-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token code keyword">    Item 3</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>my-list-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token code keyword">    Item 4</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+</div><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+```
+</code></pre></div></div><p>Open the <a href="https://github.com/hagenburger/pimd/issues/19">specification for this feature</a> on GitHub. <strong>Comments? Questions? Feedback?</strong> Feel free to discuss on the ticket!</p><h2>Showmore</h2><p>All 4 list items in the example above might be needed for the preview but pollute the code block.
 Hiding list item 2 upto 4 makes the example looks much more simple. If needed, the code can be
 expanded:</p><div class="pimd-example"><div class="pimd-preview"><ul>
   <li class="my-list-item">
@@ -322,6 +385,22 @@ expanded:</p><div class="pimd-example"><div class="pimd-preview"><ul>
     Item 4
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
 </div><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div><p>To hide parts of the source add to the code block:</p><div class="pimd-example"><div class="pimd-code"><pre><code class="lang-markdown">``` html <i style="font-style: inherit; background: yellow">showmore=5-13</i>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+<div>  <button onclick="this.parentNode.nextSibling.style.display = 'block'; this.parentNode.style.display = 'none'">···</button></div><div style="display: none">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>my-list-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token code keyword">    Item 1</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>my-list-item my-special-list-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token code keyword">    Item 2</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>my-list-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token code keyword">    Item 3</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>my-list-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token code keyword">    Item 4</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+</div><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+```
 </code></pre></div></div><p>Open the <a href="https://github.com/hagenburger/pimd/issues/19">specification for this feature</a> on GitHub. <strong>Comments? Questions? Feedback?</strong> Feel free to discuss on the ticket!</p><h2>Links</h2><p>If there is a definition for something, it can be linked:</p><div class="pimd-example"><div class="pimd-preview"><ul>
   <li class="my-list-item">
     Item 1
@@ -350,4 +429,20 @@ expanded:</p><div class="pimd-example"><div class="pimd-preview"><ul>
     Item 4
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div></div><p>To link parts of the source add to the code block:</p><div class="pimd-example"><div class="pimd-code"><pre><code class="lang-markdown">``` html <i style="font-style: inherit; background: yellow">link=/class/g=https://...;/my-special-list-item/g=#my-special-list-item</i>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+<div>  <button onclick="this.parentNode.nextSibling.style.display = 'block'; this.parentNode.style.display = 'none'">···</button></div><div style="display: none">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>my-list-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token code keyword">    Item 1</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>my-list-item my-special-list-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token code keyword">    Item 2</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>my-list-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token code keyword">    Item 3</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>my-list-item<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token code keyword">    Item 4</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+</div><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+```
 </code></pre></div></div><p>Open the <a href="https://github.com/hagenburger/pimd/issues/19">specification for this feature</a> on GitHub. <strong>Comments? Questions? Feedback?</strong> Feel free to discuss on the ticket!</p><p>Created by Nico Hagenburger. Released under MIT licence (see <a href="https://github.com/hagenburger/pimd-experimental">repository</a>).</p><p><strong>Feedback</strong> is very welcome. Do you like those features? Do you have an opinion about the naming/the syntax? Ping me <a href="https://twitter.com/hagenburger">on Twitter</a> or open an issue</p></body></html>
